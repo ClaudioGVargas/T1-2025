@@ -338,7 +338,7 @@
 //  13. Fazer um algoritmo para receber números decimais até que o usuário digite 0 e fazer a média aritmética desses números.
 
 // Importa o módulo prompt-sync
-const prompt = require('prompt-sync')()
+// const prompt = require('prompt-sync')()
 
 // Função para calcular a média dos números decimais, declara as variávies "soma" armazena a soma dos números digitados, "quantidade" conta os números digitados e "numero" gaurda temporariamente o número digitado a cada repetição.
 // function calcularMediaDecimais() {
@@ -347,7 +347,7 @@ const prompt = require('prompt-sync')()
 //   let numero
 
   // Imprime "Digite números decimais para calcular a média ou digite 0 para parar:"
-  console.log("Digite números decimais para calcular a média ou digite 0 para parar:")
+  // console.log("Digite números decimais para calcular a média ou digite 0 para parar:")
 
   // Imprime "Digite um número: " e converte em ponto flutuante
   // do {

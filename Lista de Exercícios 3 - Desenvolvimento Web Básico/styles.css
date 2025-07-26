@@ -1,0 +1,40 @@
+header {
+  background-color: #FFFFFF;
+  color:#6A0DAD;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+main {
+  background-color: #FFFFFF;
+  color: #6A0DAD;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+footer {
+  background-color: #FFFFFF;
+  color: #6A0DAD;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+/* h2*/
+h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+/* Classe destaque */
+.destaque {
+  font-style: italic;
+  background-color: white;
+}
+
+/* ID #importante */
+#importante {
+  border-top: 5px solid red;
+}

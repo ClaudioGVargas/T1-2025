@@ -1,0 +1,41 @@
+.h1 {
+   text-align: center;
+   color: red;
+}
+
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 800px;
+}
+
+.galeria figure {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.galeria img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}

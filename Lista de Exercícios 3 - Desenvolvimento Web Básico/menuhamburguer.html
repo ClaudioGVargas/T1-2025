@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Hamburguer</title>
+  <link rel="stylesheet" href="menuhamburguer.css" />
+</head>
+<body>
+
+  <nav class="menu">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="menu-links">
+      <li><a href="#">Página Inicial</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const links = document.querySelector('.menu-links');
+      links.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

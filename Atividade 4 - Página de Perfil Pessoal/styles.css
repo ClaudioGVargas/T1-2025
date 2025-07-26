@@ -1,0 +1,91 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis CSS */
+:root {
+  --cor-primaria: #0077cc;
+  --cor-secundaria: #f2f2f2;
+  --cor-fundo: #f9f9f9;
+  --cor-texto: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--cor-texto);
+  background-color: var(--cor-secundaria);
+  line-height: 1.6;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  padding: 20px;
+}
+
+/* Layout */
+header, nav, main, section, article, aside, footer {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+/* Navegação */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+}
+
+nav a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Flexbox e Grid */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  aside {
+    grid-column: 2;
+  }
+
+  section {
+    grid-column: 1;
+    transition: border-color 0.3s ease;
+  }
+}
+
+/* Pseudo-elemento */
+section::before {
+  content: "➤ ";
+  color: var(--cor-primaria);
+}
+
+/* Pseudo-classe */
+a:hover {
+  color: darkblue;
+}
